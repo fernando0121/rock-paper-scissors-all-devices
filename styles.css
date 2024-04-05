@@ -1,0 +1,80 @@
+/* Common styles */
+body {
+    font-family: monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsla(0, 0%, 0%, 0.862);
+}
+
+.choices button {
+    height: 100px;
+    width: 100px;
+    font-size: 80px;
+    border-radius: 50%;
+    background-color: hsla(0, 0%, 96%, 0.049);
+    border: 3px solid white;
+    box-shadow: 5px 10px 20px;
+    transition: background-color 0.45s;
+    cursor: pointer;
+}
+
+.choices button:hover {
+    background-color: hsl(0, 0%, 99%);
+}
+
+.choices button:active {
+    background-color: hsla(63, 91%, 44%, 0.688);
+    height: 102px;
+    width: 102px;
+}
+
+h1 {
+    font-weight: bold;
+    color: rgba(245, 245, 245, 0.516);
+    font-size: 420%;
+}
+
+#playerDisplay, #computerDisplay {
+    color: rgba(240, 248, 255, 0.826);
+    font-size: 160%;
+}
+
+#resultDisplay {
+    font-weight: bold;
+    font-size: 400%;
+}
+
+.redText, #computerScoreDisplay {
+    color: rgba(255, 14, 14, 0.919);
+}
+
+.greenText, #playerScoreDisplay {
+    color: greenyellow;
+}
+
+.scoreDisplay {
+    font-size: 1.5em;
+    background-color: rgba(240, 248, 255, 0.085);
+    padding: 3px;
+    font-weight: bold;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 375px) {
+    .choices button {
+        /* Adjust button styles for smaller screens if necessary */
+    }
+
+    h1 {
+        /* Adjust heading styles for smaller screens if necessary */
+    }
+
+    #playerDisplay, #computerDisplay {
+        /* Adjust display styles for smaller screens if necessary */
+    }
+
+    #resultDisplay {
+        /* Adjust result display styles for smaller screens if necessary */
+    }
+}
